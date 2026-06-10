@@ -270,7 +270,19 @@
                 <h3>Kirim Fresh</h3>
         </div>
     </section>
-
+<style>
+    .menu-grid { 
+        display: grid !important; 
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 30px !important; 
+    }
+    
+    @media (max-width: 768px) {
+        .menu-grid { 
+            grid-template-columns: 1fr !important; 
+        }
+    }
+</style>
     <footer>
         <p>&copy; 2026 PureFudge Bakery. Dibuat dengan cinta dan cokelat premium.</p>
     </footer>
