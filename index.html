@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureFudge - Melt-in-Your-Mouth Brownie Bites</title>
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #FFF9F2; color: #3E2723; scroll-behavior: smooth; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 25px 10%; background-color: rgba(255, 249, 242, 0.9); position: fixed; width: 100%; top: 0; z-index: 100; backdrop-filter: blur(5px); }
+        .logo { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 800; color: #3E2723; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: #3E2723; font-weight: 600; font-size: 14px; transition: 0.3s; }
+        .nav-links a:hover { color: #E0A96D; }
+
+        /* Hero Section */
+        .hero { display: flex; align-items: center; min-height: 100vh; padding: 100px 10%; gap: 50px; }
+        .hero-content { flex: 1; }
+        .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 52px; line-height: 1.2; margin-bottom: 20px; }
+        .hero-content span { color: #E0A96D; }
+        .hero-content p { font-size: 16px; line-height: 1.6; margin-bottom: 30px; color: #5C4033; }
+        .cta-btn { display: inline-block; padding: 15px 35px; background-color: #3E2723; color: #FFF9F2; text-decoration: none; font-weight: 600; border-radius: 30px; transition: 0.3s; box-shadow: 0 4px 15px rgba(62,39,35,0.2); }
+        .cta-btn:hover { background-color: #E0A96D; color: #3E2723; transform: translateY(-2px); }
+        .hero-image { flex: 1; text-align: center; }
+        .hero-image img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        /* Features Section */
+        .features { padding: 80px 10%; background-color: #F5EBE0; text-align: center; }
+        .features h2 { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .feature-card { background: #FFF9F2; padding: 40px 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.02); }
+        .feature-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 15px; }
+        .feature-card p { font-size: 14px; line-height: 1.6; color: #5C4033; }
+
+        /* Product Highlight (Bite Size) */
+        .product-highlight { display: flex; align-items: center; padding: 100px 10%; gap: 60px; }
+        .highlight-img { flex: 1; }
+        .highlight-img img { width: 100%; border-radius: 20px; }
+        .highlight-text { flex: 1; }
+        .highlight-text h2 { font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 20px; }
+        .highlight-text p { font-size: 16px; line-height: 1.6; margin-bottom: 25px; }
+
+        /* Footer */
+        footer { background-color: #3E2723; color: #FFF9F2; text-align: center; padding: 40px; font-size: 14px; }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            nav { padding: 20px 5%; }
+            .nav-links { display: none; }
+            .hero { flex-direction: column-reverse; text-align: center; padding: 120px 5% 50px 5%; }
+            .hero-content h1 { font-size: 36px; }
+            .product-highlight { flex-direction: column; padding: 60px 5%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">PureFudge.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+            <li><a href="#menu">Varian Bites</a></li>
+            <li><a href="#order" style="color: #E0A96D;">Pesan Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Satu Gigitan, <br>Kemewahan Rasa yang <span>Lumer di Dalam</span></h1>
+            <p>Memperkenalkan <i>Artisan Fudgy Brownie Bites</i>. Dipanggang dengan cokelat Belgia premium menghasilkan tekstur luar yang renyah (*shiny crust*) dan bagian dalam yang sangat lembut, padat, serta meleleh sempurna di lidah Anda.</p>
+            <a href="#order" class="cta-btn">Coba Kelembutannya</a>
+        </div>
+        <div class="hero-image">
+            <!-- Gambar representatif utama (Brownies bertumpuk estetis) -->
+            <img src="https://unsplash.com" alt="Premium Fudgy Brownies Bertumpuk Lembut">
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section class="features" id="keunggulan">
+        <h2>Mengapa Brownies Kami Begitu Candu?</h2>
+        <div class="grid">
+            <div class="feature-card">
+                <h3>Super Fudgy & Soft</h3>
+                <p>Bukan seperti tekstur bolu yang kering. Bagian dalam brownies kami sangat basah, padat, lembut, dan kaya akan cokelat murni.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Bite-Sized Perfection</h3>
+                <p>Sudah dipotong rapi menjadi kubus kecil seukuran satu kali gigitan. Tidak berantakan, praktis dimakan, dan cocok untuk teman kopi.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Premium Ingredients</h3>
+                <p>Menggunakan 100% *pure cocoa butter* dan cokelat batangan kualitas tinggi tanpa tambahan pemanis buatan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Potongan/Bites Section -->
+    <section class="product-highlight" id="menu">
+        <div class="highlight-img">
+            <!-- Gambar potongan brownies kecil seukuran satu gigitan -->
+            <img src="https://unsplash.com" alt="Brownie Bites Potongan Kecil">
+        </div>
+        <div class="highlight-text">
+            <h2>Potongan Kecil, <br>Kebahagiaan Besar</h2>
+            <p>Setiap kotak berisi potongan mini brownies presisi berukuran 3x3 cm. Ukuran yang pas untuk memanjakan diri sendiri atau dibagikan kepada orang tersayang tanpa repot memotongnya sendiri menggunakan pisau.</p>
+            <p>Tersedia dalam berbagai taburan mewah: *Almond Slices, Sea Salt, Choco Chips,* dan *Lotus Biscoff*.</p>
+            <a href="#order" class="cta-btn" style="background-color: #E0A96D; color: #3E2723;">Pesan Box Milikmu</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PureFudge Bakery. Dibuat dengan cinta dan cokelat premium.</p>
+    </footer>
+
+</body>
+</html>
