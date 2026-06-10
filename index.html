@@ -271,15 +271,41 @@
         </div>
     </section>
 <style>
+   <style>
+    /* Paksa area menu menggunakan lebar penuh website */
+    .menu-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 80px 5% !important; /* Jarak atas-bawah 80px, jarak kanan-kiri hanya 5% agar lebar */
+        box-sizing: border-box !important;
+    }
+
+    /* Paksa kotak grid melebar penuh tanpa batas maksimal */
     .menu-grid { 
         display: grid !important; 
         grid-template-columns: repeat(3, 1fr) !important; 
         gap: 30px !important; 
+        width: 100% !important;
+        max-width: 1400px !important; /* Batas maksimal layar monitor besar agar tetap rapi */
+        margin: 40px auto 0 auto !important;
     }
-    
+
+    .menu-img-box, .menu-img-box img {
+        width: 100% !important;
+        height: 250px !important; 
+        object-fit: cover !important;
+    }
+
     @media (max-width: 768px) {
+        .menu-section {
+            padding: 60px 20px !important;
+        }
         .menu-grid { 
             grid-template-columns: 1fr !important; 
+            gap: 20px !important;
+        }
+    }
+</style> 
         }
     }
 </style>
