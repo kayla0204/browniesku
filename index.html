@@ -114,10 +114,163 @@
             <p>Setiap kotak berisi potongan mini brownies presisi berukuran 3x3 cm. Ukuran yang pas untuk memanjakan diri sendiri atau dibagikan kepada orang tersayang tanpa repot memotongnya sendiri menggunakan pisau.</p>
             <p>Tersedia dalam berbagai taburan mewah: *Almond Slices, Sea Salt, Choco Chips,* dan *Lotus Biscoff*.</p>
             <a href="#order" class="cta-btn" style="background-color: #E0A96D; color: #3E2723;">Pesan Box Milikmu</a>
+          
+    <style>
+    
+        .section-header { text-align: center; max-width: 600px; margin: 60px auto 40px auto; padding: 0 20px; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 38px; color: #3E2723; margin-bottom: 15px; font-weight: 800; }
+        .section-header p { color: #705446; font-size: 15px; line-height: 1.6; }
+        
+        .menu-section { background-color: #FFF9F2; padding: 60px 10%; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 20px; }
+        .menu-card { background: #FFFFFF; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(62,39,35,0.03); transition: 0.3s; border: 1px solid rgba(62,39,35,0.02); text-align: center; }
+        .menu-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(62,39,35,0.08); }
+        .menu-img-box { height: 220px; width: 100%; overflow: hidden; background-color: #EAEAEA; }
+        .menu-img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .menu-info { padding: 25px; }
+        .menu-info h3 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; color: #3E2723; }
+        .menu-desc { font-size: 14px; color: #705446; line-height: 1.5; margin-bottom: 15px; }
+        .menu-tag { display: inline-block; margin-bottom: 10px; padding: 4px 12px; background: #F5EBE0; border-radius: 12px; font-size: 12px; font-weight: 600; color: #3E2723; }
+
+        .pricing { background-color: #F5EBE0; padding: 80px 10%; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 900px; margin: 0 auto; }
+        .price-card { background: #FFF9F2; padding: 40px 30px; border-radius: 24px; text-align: center; position: relative; overflow: hidden; }
+        .price-card.popular { border: 2px solid #E0A96D; background-color: #FFFFFF; box-shadow: 0 15px 35px rgba(62,39,35,0.08); }
+        .ribbon { position: absolute; top: 15px; right: -35px; background: #E0A96D; color: #3E2723; font-weight: 700; font-size: 11px; padding: 4px 40px; transform: rotate(45deg); }
+        .price-card h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 10px; }
+        .size-info { font-size: 13px; color: #705446; margin-bottom: 15px; }
+        .price-amount { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 800; color: #3E2723; margin-bottom: 20px; }
+        .price-features { list-style: none; margin-bottom: 30px; text-align: left; display: inline-block; }
+        .price-features li { margin-bottom: 10px; font-size: 14px; color: #5C4033; padding-left: 20px; position: relative; }
+        .price-features li::before { content: "✓"; position: absolute; left: 0; color: #E0A96D; font-weight: bold; }
+
+        .process { background-color: #FFF9F2; padding: 80px 10%; text-align: center; }
+        .steps-container { display: flex; justify-content: space-between; gap: 20px; max-width: 800px; margin: 0 auto; }
+        .step { flex: 1; padding: 15px; }
+        .step-num { width: 45px; height: 45px; background: #3E2723; color: #FFF9F2; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 15px auto; }
+        .step h3 { font-family: 'Playfair Display', serif; font-size: 18px; margin-bottom: 8px; }
+        .step p { font-size: 13px; color: #705446; line-height: 1.4; }
+
+        .testimonials { background-color: #F5EBE0; padding: 80px 10%; }
+        .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .testi-card { background: #FFF9F2; padding: 25px; border-radius: 20px; text-align: left; }
+        .stars { color: #E0A96D; margin-bottom: 10px; }
+        .testi-card p { font-size: 14px; font-style: italic; color: #5C4033; margin-bottom: 15px; }
+        .user-info { display: flex; align-items: center; gap: 12px; }
+        .user-avatar { width: 40px; height: 40px; background: #3E2723; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; }
+        
+        .whatsapp-section { background-color: #3E2723; color: #FFF9F2; text-align: center; padding: 80px 10%; }
+        .whatsapp-section h2 { font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 15px; }
+        .whatsapp-section p { color: #D5C5BC; max-width: 600px; margin: 0 auto 30px auto; font-size: 15px; }
+        
+        @media (max-width: 768px) {
+            .menu-section, .pricing, .process, .testimonials { padding: 60px 5%; }
+            .steps-container { flex-direction: column; gap: 30px; }
+        }
+    </style>
+
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <h2>Pilihan Varian Topping</h2>
+            <p>Setiap potongan bites dilapisi dengan topping premium yang berpadu sempurna dengan adonan cokelat pekat lumer.</p>
+        </div>
+        <div class="menu-grid">
+            <!-- Varian 1 -->
+            <div class="menu-card">
+                <div class="menu-img-box">
+                    <img src="https://unsplash.com" alt="Almond Slices">
+                </div>
+                <div class="menu-info">
+                    <span class="menu-tag">Best Seller</span>
+                    <h3>Roasted Almond Slices</h3>
+                    <p class="menu-desc">Irisan kacang almond gurih yang dipanggang renyah, menciptakan kontras rasa manis dan gurih.</p>
+                </div>
+            </div>
+            <!-- Varian 2 -->
+            <div class="menu-card">
+                <div class="menu-img-box">
+                    <img src="https://unsplash.com" alt="Sea Salt">
+                </div>
+                <div class="menu-info">
+                    <span class="menu-tag">Premium Artisan</span>
+                    <h3>French Sea Salt Flakes</h3>
+                    <p class="menu-desc">Taburan garam laut murni Prancis yang menonjolkan rasa manis cokelat murni menjadi sangat mewah.</p>
+                </div>
+            </div>
+            <!-- Varian 3 -->
+            <div class="menu-card">
+                <div class="menu-img-box">
+                    <img src="https://unsplash.com" alt="Lotus Biscoff">
+                </div>
+                <div class="menu-info">
+                    <span class="menu-tag">Sweet Crunch</span>
+                    <h3>Lotus Biscoff Speculoos</h3>
+                    <p class="menu-desc">Paduan selai Lotus lumer dan remahan biskuit karamel rempah khas Belgia yang wangi.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="pricing" id="harga">
+        <div class="section-header">
+            <h2>Pilih Paket Box Milikmu</h2>
+            <p>Tersedia dalam kotak eksklusif, sangat cocok untuk konsumsi pribadi, hadiah kado, hampers, atau teman minum kopi.</p>
+        </div>
+        <div class="price-grid">
+            <!-- Paket Personal -->
+            <div class="price-card">
+                <h3>Personal Box</h3>
+                <p class="size-info">Isi 16 Potong Mini (Box 12x12 cm)</p>
+                <div class="price-amount">Rp 45.000</div>
+                <ul class="price-features">
+                    <li>Pilih 1 varian topping utama</li>
+                    <li>Premium Fudgy Base (Lumer)</li>
+                    <li>Sumpit kayu higienis</li>
+                    <li>Eco-Friendly Box</li>
+                </ul>
+                <a href="#order" class="cta-btn secondary-btn" style="display:block; width:100%; text-align:center;">Pesan Box Ini</a>
+            </div>
+            <!-- Paket Sharing -->
+            <div class="price-card popular">
+                <div class="ribbon">Best Value</div>
+                <h3>Sharing Party Box</h3>
+                <p class="size-info">Isi 36 Potong Mini (Box 20x20 cm)</p>
+                <div class="price-amount">Rp 85.000</div>
+                <ul class="price-features">
+                    <li>Bisa mix s.d 3 varian topping</li>
+                    <li>Premium Fudgy Base (Lumer)</li>
+                    <li>2 Sumpit kayu higienis</li>
+                    <li>Hardbox Eksklusif Pita Cantik</li>
+                    <li>Gratis kartu ucapan kustom</li>
+                </ul>
+                <a href="#order" class="cta-btn" style="display:block; width:100%; text-align:center;">Pesan Box Ini</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TIGA LANGKAH CARA ORDER -->
+    <section class="process">
+        <div class="section-header">
+            <h2>3 Langkah Mudah Memesan</h2>
+            <p>Semua produk kami dipanggang fresh sesuai pesanan (Baked by Order) agar tiba dalam kondisi paling lembut.</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Pilih Topping</h3>
+                <p>Tentukan ukuran Box (Isi 16 / 36) beserta varian taburan topping kesukaanmu.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>Chat WhatsApp</h3>
+                <p>Klik tombol order untuk langsung terhubung ke admin kami guna mengisi data pengiriman.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Kirim Fresh</h3>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2026 PureFudge Bakery. Dibuat dengan cinta dan cokelat premium.</p>
     </footer>
